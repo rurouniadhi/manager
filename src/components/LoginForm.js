@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, Text } from 'react-native';
+import { View, Text, KeyboardAvoidingView } from 'react-native';
 import { emailChanged, passwordChanged, loginUser } from '../actions';
 import { Card, CardSection, Input, Button, Spinner } from './common';
+
 
 class LoginForm extends Component {
   onEmailChange(text) {
@@ -43,7 +44,7 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <View style={styles.loginContainer}>
+      <KeyboardAvoidingView style={styles.loginContainer} behavior="padding">
         <Text style={styles.loginLogo}>Φ</Text>
         <Card>
           <CardSection>
@@ -54,7 +55,7 @@ class LoginForm extends Component {
               value={this.props.email}
             />
           </CardSection>
-
+          
           <CardSection>
             <Input
               secureTextEntry
@@ -71,7 +72,7 @@ class LoginForm extends Component {
             {this.renderButton()}
           </CardSection>
         </Card>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }

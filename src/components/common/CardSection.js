@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import { View } from 'react-native';
 
 const CardSection = (props) => {
     return (
@@ -9,7 +9,7 @@ const CardSection = (props) => {
     );
 };
 
-const styles ={
+const styles = {
     containerStyle: {
         borderBottomWidth: 1,
         justifyContent: 'center',
@@ -20,4 +20,4 @@ const styles ={
     }
 };
 
-export {CardSection};
+export { CardSection };
