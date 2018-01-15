@@ -22,4 +22,4 @@ const styles = {
     }
 };
 
-export {Card};
+export { Card };

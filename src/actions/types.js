@@ -7,3 +7,4 @@ export const LOGIN_USER = 'login_user';
 export const PERSON_UPDATE = 'person_update';
 export const PERSON_CREATE = 'person_create';
 export const PERSONS_FETCH_SUCCESS = 'persons_fetch_success';
+export const PERSON_SAVE_SUCCESS = 'person_save_success';

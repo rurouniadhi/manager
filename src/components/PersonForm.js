@@ -37,4 +37,4 @@ const mapStateToProps = (state) => {
   return { name, phone };
 };
 
-export default connect(mapStateToProps, personUpdate)(PersonForm);
+export default connect(mapStateToProps, { personUpdate })(PersonForm);
